@@ -222,9 +222,9 @@
                 <div id="content">
                     <h1 style="margin-top:-10px">${name}</h1>
                     <p>Customizes the colors of X, Y, and Z axes.</p>
-					<h4>Worth noting:</h4>
-					<p>- A refresh of the scene (either by changing tabs or modes) may be required to see some color change in some on-Canvas elements.</p>
-					<p>- This plugin is for in-Blockbench display purposes only!</p>
+                    <h4>Worth noting:</h4>
+                    <p>- A refresh of the scene (either by changing tabs or modes) may be required to see some color change in some on-Canvas elements.</p>
+                    <p>- This plugin is for in-Blockbench display purposes only!</p>
                     <p>- The default axis colors are:</p>
                     <ul class="axis_default_color_list">
                         <li id="red">X-Axis: <b>#ff1242</b></li>

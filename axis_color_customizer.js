@@ -1,6 +1,4 @@
-// X: #ff1242
-// Y: #23d400
-// Z: #0894ed
+// To do: Change colors of gizmos
 
 (async function() {
     let aboutAction, axisAction, axisDialog
@@ -202,12 +200,40 @@
                     dialog#about #content {
                         margin: 24px;
                     }
+
+                    dialog#about .axis_default_color_list {
+                        margin-left: 35px;
+                    }
+
+                    dialog#about #red {
+                        color: #ff1242
+                    }
+
+                    dialog#about #green {
+                        color: #23d400
+                    }
+
+                    dialog#about #blue {
+                        color: #0894ed
+                    }
                 </style>
 
                 ${banner ? `<div id="banner">This window can be reopened at any time from <strong>Help > About Plugins > ${name}</strong></div>` : ""}
                 <div id="content">
                     <h1 style="margin-top:-10px">${name}</h1>
-                    <p>placeholder</p>
+                    <p>Customizes the colors of X, Y, and Z axes.</p>
+					<h4>Worth noting:</h4>
+					<p>- A refresh of the scene (either by changing tabs or modes) may be required to see some color change in some on-Canvas elements.</p>
+					<p>- This plugin is for in-Blockbench display purposes only!</p>
+                    <p>- The default axis colors are:</p>
+                    <ul class="axis_default_color_list">
+                        <li id="red">X-Axis: <b>#ff1242</b></li>
+                        <li id="green">Y-Axis: <b>#23d400</b></li>
+                        <li id="blue">Z-Axis: <b>#0894ed</b></li>
+                    </ul>  
+					<h4>How to use:</h4>
+					<p>To use this plugin, go to <b>Tools > Change Axis Colors</b>. Configure the colors how you like and then press <strong>Confirm</strong>. You can also revert the axis colors to their defaults by pressing the <strong>Reset Axis Colors</strong> button if you wish.</p>
+					<br>
                     <div class="socials">
                         <a href="${links["website"]}" class="open-in-browser">
                             <i class="icon material-icons" style="color:#33E38E">language</i>

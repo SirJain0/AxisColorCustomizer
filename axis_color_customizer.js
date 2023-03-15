@@ -28,7 +28,7 @@
         icon,
         author,
         description: "Customizes the colors of X, Y, and Z axes.",
-        about: "To be filled out.",
+        about: "This plugin allows you to customize the colors of the X, Y, and Z axis.\n## How to use\nTo use this plugin, go to `Tools > Change Axis Colors`. Configure the colors how you like and then press `Confirm`.",
         tags: ["Axis", "3D", "Color"],
         version: "1.0.0",
         min_version: "4.2.0",
@@ -89,7 +89,7 @@
                         formData.colorX.toHexString(),
                         formData.colorY.toHexString(),
                         formData.colorZ.toHexString()
-                    )
+                    );
 
                     localStorage.setItem("x_color", formData.colorX.toHexString());
                     localStorage.setItem("y_color", formData.colorY.toHexString());

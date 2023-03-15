@@ -40,7 +40,7 @@
             updateAxisColors(xColor, yColor, zColor)
 
             axisDialog = new Dialog("change_axis_color_dialog", {
-                name: "Change Axis Color",
+                name: "Change Axis Colors",
 
                 // Dialog form
                 form: {
@@ -98,7 +98,7 @@
             })
             
             axisAction = new Action({
-                name: "Change Axis Color",
+                name: "Change Axis Colors",
                 id: "change_axis_color",
                 icon: icon,
                 click: () => axisDialog.show()

@@ -101,6 +101,7 @@
                 name: "Change Axis Colors",
                 id: "change_axis_color",
                 icon: icon,
+                condition: () => Format?.id != "image",
                 click: () => axisDialog.show()
             })
 

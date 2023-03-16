@@ -1,4 +1,4 @@
-// To do: Change colors of gizmos
+// To do: Change colors of Canvas gizmos and Orbit Gizmo.
 
 (async function() {
     let aboutAction, axisAction, axisDialog
@@ -14,7 +14,7 @@
         discord: "https://discord.gg/wM4CKTbFVN"
     }
 
-    // <body> HTML tag - CSS variable is stored here
+    // <body> HTML tag - CSS variable is stored there
     const body = document.getElementsByTagName("BODY")[0];
 
     // localStorage
@@ -101,7 +101,6 @@
                 name: "Change Axis Colors",
                 id: "change_axis_color",
                 icon: icon,
-                condition: () => Format?.id != "image",
                 click: () => axisDialog.show()
             })
 
@@ -127,6 +126,8 @@
         updateAxisColorX(colorX);
         updateAxisColorY(colorY);
         updateAxisColorZ(colorZ);
+
+        Canvas.updateAll();
     }
 
     // Update colors of individual axes 
@@ -155,6 +156,7 @@
                 icon: "info",
                 children: []
             })
+
             MenuBar.addAction(about, "help")
         }
 

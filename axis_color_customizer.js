@@ -101,6 +101,7 @@
                 name: "Change Axis Colors",
                 id: "change_axis_color",
                 icon: icon,
+                condition: () => Format?.id != "image",
                 click: () => axisDialog.show()
             })
 
@@ -234,9 +235,9 @@
                         <li id="green">Y-Axis: <b>#23d400</b></li>
                         <li id="blue">Z-Axis: <b>#0894ed</b></li>
                     </ul>  
-					<h4>How to use:</h4>
-					<p>To use this plugin, go to <b>Tools > Change Axis Colors</b>. Configure the colors how you like and then press <strong>Confirm</strong>. You can also revert the axis colors to their defaults by pressing the <strong>Reset Axis Colors</strong> button if you wish.</p>
-					<br>
+		    <h4>How to use:</h4>
+		    <p>To use this plugin, go to <b>Tools > Change Axis Colors</b>. Configure the colors how you like and then press <strong>Confirm</strong>. You can also revert the axis colors to their defaults by pressing the <strong>Reset Axis Colors</strong> button if you wish.</p>
+		    <br>
                     <div class="socials">
                         <a href="${links["website"]}" class="open-in-browser">
                             <i class="icon material-icons" style="color:#33E38E">language</i>

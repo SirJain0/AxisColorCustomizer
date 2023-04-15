@@ -1,4 +1,4 @@
-# Axis Color Customize: NOT PUBLISHED!
+# Axis Color CustomizeR: NOT PUBLISHED!
 Customizes the colors of X, Y, and Z axes.
 ## Worth noting:
 - A refresh of the scene (either by changing tabs or modes) may be required to see some color change in some on-Canvas elements.
